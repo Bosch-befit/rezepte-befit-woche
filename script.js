@@ -1,7 +1,6 @@
 const pdfLink = document.getElementById('pdfLink');
 
-// Replace this URL with your actual PDF URL.
-const actualPdfUrl = 'https://example.com/dein-rezept.pdf';
+const actualPdfUrl = 'https://github.com/Bosch-befit/rezepte-befit-woche/blob/main/meine%20Kreationen.pdf';
 
 if (pdfLink) {
   pdfLink.href = actualPdfUrl;
