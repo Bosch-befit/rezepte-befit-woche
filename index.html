@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezepte befit Woche</title>
+    <meta
+      name="description"
+      content="Hier findest du das Rezept der befit Woche. Du kannst das Rezept direkt auf deinem Smartphone öffnen und bei Bedarf als Screenshot speichern."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-image" aria-label="Bild der Rezeptkreationen">
+          <div class="image-overlay">
+            <span class="badge">befit</span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Rezepte der Woche</p>
+          <h1>Rezepte befit Woche</h1>
+          <p class="description">
+            Hier findest du das Rezept der befit Woche. Du kannst das Rezept direkt
+            auf deinem Smartphone öffnen und bei Bedarf als Screenshot speichern.
+          </p>
+
+          <div class="actions">
+            <a
+              id="pdfLink"
+              class="button primary"
+              href="https://example.com/dein-rezept.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PDF öffnen
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section class="info-panel" aria-label="QR-Code und Link">
+        <div class="qr-block">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fbosch-befit.github.io%2Frezepte-befit-woche%2F"
+            alt="QR-Code zur Rezeptseite"
+          />
+        </div>
+
+        <div class="meta">
+          <h2>Öffentlich erreichbar</h2>
+          <p>
+            Scanne den QR-Code oder öffne den Link direkt auf deinem Smartphone.
+          </p>
+          <a
+            class="tiny-link"
+            href="https://bosch-befit.github.io/rezepte-befit-woche/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            bosch-befit.github.io/rezepte-befit-woche/
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
