@@ -1,33 +1,41 @@
 <svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">befit Logo</title>
-  <desc id="desc">Ein kreisförmiges befit-Logo mit großem Schriftzug, Herzfrequenzlinie und 10 Jahre Sportzentrum.</desc>
-  <rect width="1200" height="1200" fill="#000000"/>
+  <desc id="desc">Modernisiertes befit-Logo mit kreisförmigem Rahmen, großem Schriftzug und 10 Jahre Sportzentrum.</desc>
 
-  <g>
-    <circle cx="600" cy="600" r="490" fill="#f1f0ee"/>
-    <circle cx="600" cy="600" r="454" fill="none" stroke="#0d8798" stroke-width="18"/>
-    <circle cx="600" cy="600" r="474" fill="none" stroke="#0d8798" stroke-width="12" opacity="0.9"/>
-  </g>
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7f3ee"/>
+      <stop offset="100%" stop-color="#edf6f5"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#8d3ab5"/>
+      <stop offset="100%" stop-color="#0f8a9b"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="600" cy="600" r="490" fill="url(#bgGlow)"/>
+  <circle cx="600" cy="600" r="450" fill="none" stroke="#0d8798" stroke-width="14" opacity="0.9"/>
+  <circle cx="600" cy="600" r="477" fill="none" stroke="#0d8798" stroke-width="7" opacity="0.35"/>
 
   <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
-    <text x="600" y="435" text-anchor="middle" fill="#0f8a9b" font-size="250" letter-spacing="-12">befit</text>
+    <text x="600" y="430" text-anchor="middle" fill="#0f8a9b" font-size="240" letter-spacing="-14">befit</text>
   </g>
 
-  <g transform="translate(0 15)">
-    <path d="M260 540 H382 L408 540 L430 540 L462 540 L488 540 L514 540 L542 540 L560 540 L594 540 L610 540 L640 540 L668 540 L694 540 L700 540 L716 540 L748 540 L778 540 L797 540 L820 540 L845 540 L870 540 L904 540 L928 540" fill="none" stroke="#8d3ab5" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M392 540 L420 540 L440 500 L465 620 L490 540 L518 540 L540 540 L565 540 L588 540 L598 540 L618 540 L630 540 L658 540 L690 540 L716 540 L735 600 L760 500 L790 540 L820 540 L862 540" fill="none" stroke="#5b6ef1" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M382 540 L392 540 L408 540 L430 540 L462 540" fill="none" stroke="#8d3ab5" stroke-width="20" stroke-linecap="round"/>
-    <path d="M630 540 L690 540 L716 540" fill="none" stroke="#5b6ef1" stroke-width="20" stroke-linecap="round"/>
+  <g transform="translate(0 18)">
+    <path d="M260 540 H378 L410 540 L430 540 L458 540 L492 540 L520 540 L548 540 L571 540 L598 540 L615 540 L648 540 L675 540 L705 540 L726 540 L754 540 L782 540 L810 540 L840 540 L855 540" fill="none" stroke="url(#accentLine)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M388 540 L420 540 L446 500 L470 618 L495 540 L520 540 L548 540 L573 540 L590 540 L616 540 L637 540 L666 540 L695 540 L722 540 L741 598 L767 500 L796 540 L825 540 L860 540" fill="none" stroke="#0f8a9b" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <path d="M382 540 L394 540 L410 540 L430 540 L462 540" fill="none" stroke="#8d3ab5" stroke-width="18" stroke-linecap="round"/>
+    <path d="M632 540 L680 540 L716 540" fill="none" stroke="#5b6ef1" stroke-width="18" stroke-linecap="round"/>
   </g>
 
-  <g transform="translate(0 5)">
-    <text x="290" y="740" fill="#8d3ab5" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="220">10</text>
-    <line x1="470" y1="640" x2="470" y2="845" stroke="#1a8ea4" stroke-width="12" stroke-linecap="round"/>
+  <g transform="translate(0 8)">
+    <text x="290" y="760" fill="#8d3ab5" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="220">10</text>
+    <line x1="470" y1="642" x2="470" y2="856" stroke="#0f8a9b" stroke-width="13" stroke-linecap="round"/>
     <text x="560" y="760" fill="#0f8a9b" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="92">JAHRE</text>
-    <text x="560" y="860" fill="#0f8a9b" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="82">SPORTZENTRUM</text>
+    <text x="560" y="860" fill="#0f8a9b" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="80">SPORTZENTRUM</text>
   </g>
 
   <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
-    <text x="600" y="1025" text-anchor="middle" fill="#0f8a9b" font-size="210">AnP</text>
+    <text x="600" y="1030" text-anchor="middle" fill="#0f8a9b" font-size="200">AnP</text>
   </g>
 </svg>
