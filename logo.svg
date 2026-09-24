@@ -1,41 +1,39 @@
-<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">befit Logo</title>
-  <desc id="desc">Modernisiertes befit-Logo mit kreisförmigem Rahmen, großem Schriftzug und 10 Jahre Sportzentrum.</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="625" viewBox="0 0 628 625" role="img" aria-labelledby="title desc">
+  <title id="title">befit 10 Jahre Sportzentrum AnP</title>
+  <desc id="desc">Originalgetreues befit Jubiläumslogo mit 10 Jahre Sportzentrum und AnP.</desc>
   <defs>
-    <linearGradient id="bgGlow" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f7f3ee"/>
-      <stop offset="100%" stop-color="#edf6f5"/>
-    </linearGradient>
-    <linearGradient id="accentLine" x1="0%" x2="100%" y1="0%" y2="0%">
-      <stop offset="0%" stop-color="#8d3ab5"/>
-      <stop offset="100%" stop-color="#0f8a9b"/>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7810b9"/>
+      <stop offset="0.42" stop-color="#5523c4"/>
+      <stop offset="0.7" stop-color="#168ee5"/>
+      <stop offset="1" stop-color="#12a9a6"/>
     </linearGradient>
   </defs>
 
-  <circle cx="600" cy="600" r="490" fill="url(#bgGlow)"/>
-  <circle cx="600" cy="600" r="450" fill="none" stroke="#0d8798" stroke-width="14" opacity="0.9"/>
-  <circle cx="600" cy="600" r="477" fill="none" stroke="#0d8798" stroke-width="7" opacity="0.35"/>
+  <rect width="628" height="625" fill="#fff"/>
 
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
-    <text x="600" y="430" text-anchor="middle" fill="#0f8a9b" font-size="240" letter-spacing="-14">befit</text>
+  <!-- circular logo ring; deliberately interrupted by the pulse line and AnP -->
+  <path d="M34 286 A279 279 0 1 1 593 286" fill="none" stroke="#087d86" stroke-width="8"/>
+  <path d="M34 302 A279 279 0 0 0 229 588" fill="none" stroke="#087d86" stroke-width="8"/>
+  <path d="M398 588 A279 279 0 0 0 593 302" fill="none" stroke="#087d86" stroke-width="8"/>
+
+  <!-- befit -->
+  <g fill="#087d86" font-family="Arial, Helvetica, sans-serif">
+    <text x="130" y="226" font-size="157" font-weight="300" letter-spacing="-8">be</text>
+    <text x="293" y="226" font-size="157" font-weight="700" letter-spacing="-8">fit</text>
   </g>
 
-  <g transform="translate(0 18)">
-    <path d="M260 540 H378 L410 540 L430 540 L458 540 L492 540 L520 540 L548 540 L571 540 L598 540 L615 540 L648 540 L675 540 L705 540 L726 540 L754 540 L782 540 L810 540 L840 540 L855 540" fill="none" stroke="url(#accentLine)" stroke-width="20" stroke-linecap="round"/>
-    <path d="M388 540 L420 540 L446 500 L470 618 L495 540 L520 540 L548 540 L573 540 L590 540 L616 540 L637 540 L666 540 L695 540 L722 540 L741 598 L767 500 L796 540 L825 540 L860 540" fill="none" stroke="#0f8a9b" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-    <path d="M382 540 L394 540 L410 540 L430 540 L462 540" fill="none" stroke="#8d3ab5" stroke-width="18" stroke-linecap="round"/>
-    <path d="M632 540 L680 540 L716 540" fill="none" stroke="#5b6ef1" stroke-width="18" stroke-linecap="round"/>
+  <!-- pulse / heartbeat line -->
+  <path d="M50 298 H127 L141 264 L162 316 L178 288 L190 333 L216 249 L240 307 L256 298 H404 L423 257 L445 319 L460 290 L478 333 L495 298 H571" fill="none" stroke="url(#pulse)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- anniversary information -->
+  <text x="86" y="480" fill="#7511b9" font-family="Arial, Helvetica, sans-serif" font-size="151" font-weight="700" letter-spacing="-9">10</text>
+  <path d="M266 360 V487" stroke="#087d86" stroke-width="4"/>
+  <g fill="#087d86" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="291" y="433" font-size="64" letter-spacing="3">JAHRE</text>
+    <text x="292" y="478" font-size="30" letter-spacing="1">SPORTZENTRUM</text>
   </g>
 
-  <g transform="translate(0 8)">
-    <text x="290" y="760" fill="#8d3ab5" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="220">10</text>
-    <line x1="470" y1="642" x2="470" y2="856" stroke="#0f8a9b" stroke-width="13" stroke-linecap="round"/>
-    <text x="560" y="760" fill="#0f8a9b" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="92">JAHRE</text>
-    <text x="560" y="860" fill="#0f8a9b" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="80">SPORTZENTRUM</text>
-  </g>
-
-  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
-    <text x="600" y="1030" text-anchor="middle" fill="#0f8a9b" font-size="200">AnP</text>
-  </g>
+  <!-- AnP -->
+  <text x="238" y="591" fill="#087d86" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="700" letter-spacing="-7">AnP</text>
 </svg>
