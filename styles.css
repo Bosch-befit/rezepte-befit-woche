@@ -120,19 +120,34 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 54px;
-  padding: 0.95rem 1.45rem;
-  border-radius: 999px;
+  min-height: 58px;
+  padding: 1rem 1.7rem;
+  border-radius: 16px;
   text-decoration: none;
-  font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 }
-.button:hover { transform: translateY(-1px); }
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}
 .button.primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  background: linear-gradient(135deg, #0b6f82 0%, #0e8aa0 100%);
   color: white;
-  box-shadow: 0 10px 20px rgba(15, 138, 155, 0.18);
+  box-shadow: 0 12px 24px rgba(12, 109, 123, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.button.primary::before {
+  content: "↓";
+  font-size: 1.2rem;
+  margin-right: 0.7rem;
+  line-height: 1;
+  transform: translateY(-1px);
 }
 .info-panel {
   margin-top: 1.5rem;
