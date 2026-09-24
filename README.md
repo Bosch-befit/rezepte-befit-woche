@@ -1,4 +1,4 @@
-# Rezeptseite für befit Woche
+# befit Rezepte
 
 Diese Datei enthält eine einfache öffentliche GitHub Pages-Seite mit:
 - Überschrift: `Rezepte befit Woche`
