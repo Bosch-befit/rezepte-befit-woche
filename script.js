@@ -4,4 +4,6 @@ const actualPdfUrl = 'https://raw.githubusercontent.com/Bosch-befit/rezepte-befi
 
 if (pdfLink) {
   pdfLink.href = actualPdfUrl;
+  pdfLink.setAttribute('download', 'befit-rezepte.pdf');
+  pdfLink.setAttribute('target', '_blank');
 }
