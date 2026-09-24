@@ -1,14 +1,10 @@
 const pdfLink = document.getElementById('pdfLink');
 
-const actualPdfUrl = '';
+const actualPdfUrl = 'BeFit%20Rezepte.pdf';
 
 if (pdfLink) {
-  pdfLink.href = '#';
-  pdfLink.textContent = 'PDF in Bearbeitung';
-  pdfLink.setAttribute('aria-disabled', 'true');
-  pdfLink.setAttribute('role', 'link');
-
-  pdfLink.addEventListener('click', (event) => {
-    event.preventDefault();
-  });
+  pdfLink.href = actualPdfUrl;
+  pdfLink.textContent = 'PDF herunterladen';
+  pdfLink.removeAttribute('aria-disabled');
+  pdfLink.removeAttribute('role');
 }
