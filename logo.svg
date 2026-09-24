@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">befit Sportzentrum Logo</title>
+  <desc id="desc">Logo mit Kreis, Herzschlaglinie und dem Schriftzug befit Sportzentrum</desc>
+  <defs>
+    <linearGradient id="pulse" x1="0" x2="1">
+      <stop offset="0" stop-color="#6412b8" />
+      <stop offset="0.55" stop-color="#1389e8" />
+      <stop offset="1" stop-color="#08a9a5" />
+    </linearGradient>
+  </defs>
+  <circle cx="155" cy="150" r="128" fill="none" stroke="#007f86" stroke-width="10" />
+  <path d="M45 157h55l20-45 25 82 27-66 22 29h45" fill="none" stroke="url(#pulse)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="245" y="145" fill="#007f86" font-family="Arial, sans-serif" font-size="92" font-weight="700">befit</text>
+  <line x1="245" y1="165" x2="660" y2="165" stroke="#007f86" stroke-width="3" />
+  <text x="247" y="198" fill="#007f86" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="4">SPORTZENTRUM</text>
+</svg>
