@@ -59,7 +59,7 @@ img {
   border-radius: 22px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(120, 72, 46, 0.22), rgba(58, 36, 26, 0.35)),
+  background: linear-gradient(135deg, rgba(120, 72, 46, 0.18), rgba(58, 36, 26, 0.3)),
     url("https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
   border: 1px solid rgba(96, 73, 54, 0.18);
 }
@@ -85,6 +85,13 @@ img {
 
 .hero-content {
   padding: 1rem 0.5rem;
+}
+
+.brand-logo {
+  width: min(180px, 100%);
+  height: auto;
+  margin: 0 0 1rem;
+  filter: drop-shadow(0 8px 12px rgba(84, 51, 31, 0.12));
 }
 
 .eyebrow {
