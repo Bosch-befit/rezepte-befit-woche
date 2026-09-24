@@ -1,39 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="625" viewBox="0 0 628 625" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
   <title id="title">befit 10 Jahre Sportzentrum AnP</title>
-  <desc id="desc">Originalgetreues befit Jubiläumslogo mit 10 Jahre Sportzentrum und AnP.</desc>
+  <desc id="desc">Jubiläumslogo mit befit, Pulse, 10 Jahre Sportzentrum und AnP.</desc>
+
   <defs>
-    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7810b9"/>
-      <stop offset="0.42" stop-color="#5523c4"/>
-      <stop offset="0.7" stop-color="#168ee5"/>
-      <stop offset="1" stop-color="#12a9a6"/>
+    <linearGradient id="pulseGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#7d2bc7" />
+      <stop offset="45%" stop-color="#7d2bc7" />
+      <stop offset="55%" stop-color="#3c7ff0" />
+      <stop offset="100%" stop-color="#0e9d9d" />
     </linearGradient>
   </defs>
 
-  <rect width="628" height="625" fill="#fff"/>
+  <rect width="700" height="700" fill="#f3f3f1"/>
 
-  <!-- circular logo ring; deliberately interrupted by the pulse line and AnP -->
-  <path d="M34 286 A279 279 0 1 1 593 286" fill="none" stroke="#087d86" stroke-width="8"/>
-  <path d="M34 302 A279 279 0 0 0 229 588" fill="none" stroke="#087d86" stroke-width="8"/>
-  <path d="M398 588 A279 279 0 0 0 593 302" fill="none" stroke="#087d86" stroke-width="8"/>
+  <circle cx="350" cy="350" r="292" fill="#f6f6f4" stroke="#0a7a81" stroke-width="8"/>
+  <circle cx="350" cy="350" r="280" fill="none" stroke="#0a7a81" stroke-width="2" opacity="0.5"/>
 
-  <!-- befit -->
-  <g fill="#087d86" font-family="Arial, Helvetica, sans-serif">
-    <text x="130" y="226" font-size="157" font-weight="300" letter-spacing="-8">be</text>
-    <text x="293" y="226" font-size="157" font-weight="700" letter-spacing="-8">fit</text>
-  </g>
+  <text x="350" y="238" text-anchor="middle" fill="#0a7a81" font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="700" letter-spacing="-10">befit</text>
 
-  <!-- pulse / heartbeat line -->
-  <path d="M50 298 H127 L141 264 L162 316 L178 288 L190 333 L216 249 L240 307 L256 298 H404 L423 257 L445 319 L460 290 L478 333 L495 298 H571" fill="none" stroke="url(#pulse)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95 333 H155 L175 295 L195 362 L218 317 L240 352 L261 286 L285 338 L308 333 H390 L420 290 L440 364 L462 322 L484 355 L508 333 H585" fill="none" stroke="url(#pulseGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- anniversary information -->
-  <text x="86" y="480" fill="#7511b9" font-family="Arial, Helvetica, sans-serif" font-size="151" font-weight="700" letter-spacing="-9">10</text>
-  <path d="M266 360 V487" stroke="#087d86" stroke-width="4"/>
-  <g fill="#087d86" font-family="Arial, Helvetica, sans-serif" font-weight="700">
-    <text x="291" y="433" font-size="64" letter-spacing="3">JAHRE</text>
-    <text x="292" y="478" font-size="30" letter-spacing="1">SPORTZENTRUM</text>
-  </g>
+  <text x="150" y="500" fill="#7d2bc7" font-family="Arial, Helvetica, sans-serif" font-size="155" font-weight="700" letter-spacing="-10">10</text>
 
-  <!-- AnP -->
-  <text x="238" y="591" fill="#087d86" font-family="Arial, Helvetica, sans-serif" font-size="80" font-weight="700" letter-spacing="-7">AnP</text>
+  <line x1="300" y1="392" x2="300" y2="520" stroke="#0a7a81" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="332" y="438" fill="#0a7a81" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="2">JAHRE</text>
+  <text x="332" y="484" fill="#0a7a81" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="1">SPORTZENTRUM</text>
+
+  <text x="350" y="598" text-anchor="middle" fill="#0a7a81" font-family="Arial, Helvetica, sans-serif" font-size="118" font-weight="700" letter-spacing="-7">AnP</text>
 </svg>
