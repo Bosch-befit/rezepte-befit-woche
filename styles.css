@@ -11,14 +11,8 @@
   --shadow: 0 18px 38px rgba(13, 35, 40, 0.08);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
   margin: 0;
   min-height: 100vh;
@@ -29,12 +23,7 @@ body {
   background: linear-gradient(180deg, #f6f7f5 0%, #edf2ef 100%);
   color: var(--text);
 }
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
+img { max-width: 100%; display: block; }
 .page-shell {
   width: min(1100px, 92vw);
   background: rgba(255, 255, 255, 0.72);
@@ -44,7 +33,6 @@ img {
   border-radius: 28px;
   backdrop-filter: blur(6px);
 }
-
 .hero {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
@@ -55,26 +43,24 @@ img {
   border-radius: 24px;
   padding: 1.5rem;
 }
-
 .hero-image {
   min-height: 500px;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
   border-radius: 22px;
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.9), transparent 18%),
-    radial-gradient(circle at 80% 25%, rgba(15, 138, 155, 0.15), transparent 24%),
-    linear-gradient(135deg, #edf3f1 0%, #e6efe8 45%, #dfeeea 100%);
+  background: linear-gradient(135deg, #edf3f1 0%, #e6efe8 45%, #dfeeea 100%);
   border: 1px solid rgba(15, 138, 155, 0.1);
 }
-
 .hero-image::before,
 .hero-image::after {
   content: "";
   position: absolute;
   border-radius: 50%;
+  pointer-events: none;
 }
-
 .hero-image::before {
   width: 420px;
   height: 420px;
@@ -82,7 +68,6 @@ img {
   bottom: -120px;
   background: rgba(15, 138, 155, 0.08);
 }
-
 .hero-image::after {
   width: 260px;
   height: 260px;
@@ -91,40 +76,15 @@ img {
   background: rgba(255, 255, 255, 0.45);
   border: 1px solid rgba(15, 138, 155, 0.08);
 }
-
-.image-overlay {
-  position: absolute;
-  left: 1.4rem;
-  bottom: 1.4rem;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(15, 138, 155, 0.12);
-  border-radius: 999px;
-  padding: 0.5rem 0.85rem;
-  box-shadow: 0 10px 20px rgba(15, 138, 155, 0.08);
-}
-
-.badge {
-  font-size: 0.72rem;
-  letter-spacing: 0.22rem;
-  text-transform: uppercase;
-  color: var(--accent-strong);
-  font-weight: 700;
-}
-
-.hero-content {
-  padding: 1rem 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.brand-logo {
-  width: min(200px, 100%);
+.hero-logo {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 430px);
   height: auto;
-  margin: 0 0 1rem;
-  filter: drop-shadow(0 10px 14px rgba(15, 138, 155, 0.08));
+  border-radius: 18px;
+  box-shadow: 0 18px 32px rgba(13, 35, 40, 0.16);
 }
-
+.hero-content { padding: 1rem 0.5rem; }
 .eyebrow {
   margin: 0 0 0.7rem;
   color: var(--accent);
@@ -133,7 +93,6 @@ img {
   letter-spacing: 0.18rem;
   font-weight: 700;
 }
-
 h1 {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -143,7 +102,6 @@ h1 {
   font-weight: 800;
   color: var(--text);
 }
-
 .description {
   margin-top: 1rem;
   font-size: 1.06rem;
@@ -151,14 +109,7 @@ h1 {
   color: var(--muted);
   max-width: 540px;
 }
-
-.actions {
-  margin-top: 1.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
+.actions { margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 1rem; }
 .button {
   display: inline-flex;
   align-items: center;
@@ -168,20 +119,15 @@ h1 {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   -webkit-tap-highlight-color: transparent;
 }
-
-.button:hover {
-  transform: translateY(-1px);
-}
-
+.button:hover { transform: translateY(-1px); }
 .button.primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: white;
   box-shadow: 0 10px 20px rgba(15, 138, 155, 0.18);
 }
-
 .info-panel {
   margin-top: 1.5rem;
   display: grid;
@@ -193,86 +139,26 @@ h1 {
   border-radius: 22px;
   padding: 1.2rem 1.35rem;
 }
-
 .qr-block {
   display: grid;
   place-items: center;
   padding: 0.75rem;
-  background: #ffffff;
+  background: #fff;
   border-radius: 18px;
   border: 1px solid rgba(15, 138, 155, 0.08);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
-
-.qr-block img {
-  width: 180px;
-  height: 180px;
-  border-radius: 18px;
-  background: white;
-  padding: 0.5rem;
-}
-
-.meta h2 {
-  margin: 0 0 0.5rem;
-  font-size: clamp(1.35rem, 2vw, 2rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-.meta p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.tiny-link {
-  display: inline-block;
-  margin-top: 0.8rem;
-  font-weight: 600;
-  color: var(--accent-strong);
-  text-decoration: none;
-  word-break: break-word;
-}
-
+.qr-block img { width: 180px; height: 180px; border-radius: 18px; background: white; padding: 0.5rem; }
+.meta h2 { margin: 0 0 0.5rem; font-size: clamp(1.35rem, 2vw, 2rem); font-weight: 700; letter-spacing: -0.04em; }
+.meta p { margin: 0; color: var(--muted); line-height: 1.7; }
+.tiny-link { display: inline-block; margin-top: 0.8rem; font-weight: 600; color: var(--accent-strong); text-decoration: none; word-break: break-word; }
 @media (max-width: 760px) {
-  body {
-    padding: 0.75rem;
-  }
-
-  .page-shell {
-    width: min(94vw, 560px);
-    padding: 1rem;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .hero-image {
-    min-height: 280px;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-  .button {
-    width: 100%;
-    min-height: 52px;
-  }
-
-  .actions {
-    width: 100%;
-  }
-
-  .info-panel {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .qr-block {
-    max-width: 220px;
-    margin: 0 auto;
-  }
+  body { padding: 0.75rem; }
+  .page-shell { width: min(94vw, 560px); padding: 1rem; }
+  .hero { grid-template-columns: 1fr; padding: 1rem; }
+  .hero-image { min-height: 280px; padding: 0.75rem; }
+  .description { font-size: 1rem; }
+  .button { width: 100%; min-height: 52px; }
+  .actions { width: 100%; }
+  .info-panel { grid-template-columns: 1fr; text-align: center; }
+  .qr-block { max-width: 220px; margin: 0 auto; }
 }
